@@ -4,42 +4,103 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>CSE C Section Class</title>
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
     <div class="container">
-      <h1 style="text-align: center">Welcome to CSE C Section Class!</h1>
-      <div class="students">
-        <p><strong>Students:</strong></p>
-        <ul>
-          <li>Student 1</li>
-          <li>Student 2</li>
-          <li>Student 3</li>
-          <!-- Add more students here -->
-        </ul>
-      </div>
-      <div class="timetable">
-        <p><strong>Timetable:</strong></p>
-        <table border="1">
-          <tr>
-            <th>Time</th>
-            <th>Monday</th>
-            <th>Tuesday</th>
-            <th>Wednesday</th>
-            <th>Thursday</th>
-            <th>Friday</th>
-          </tr>
-          <tr>
-            <td>9:00 AM</td>
-            <td>Class A</td>
-            <td>Class B</td>
-            <td>Class C</td>
-            <td>Class D</td>
-            <td>Class E</td>
-          </tr>
-          <!-- Add more timetable rows here -->
-        </table>
-      </div>
+      <!-- Navigation Bar -->
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#students">Students</a></li>
+            <li><a href="#timetable">Timetable</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <section id="home">
+          <h1>Welcome to CSE C Section Class!</h1>
+        </section>
+      </header>
+      <main>
+        <!-- Students Section -->
+        <section id="students" class="students">
+          <h2>Students</h2>
+          <ul>
+            <li>Student 1</li>
+            <li>Student 2</li>
+            <li>Student 3</li>
+            <li>Student 4</li>
+            <li>Student 5</li>
+          </ul>
+        </section>
+        <!-- Timetable Section -->
+        <section id="timetable" class="timetable">
+          <h2>Timetable</h2>
+          <div class="table-wrapper">
+            <table>
+              <thead>
+                <tr>
+                  <th>Time</th>
+                  <th>Monday</th>
+                  <th>Tuesday</th>
+                  <th>Wednesday</th>
+                  <th>Thursday</th>
+                  <th>Friday</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>9:00 AM</td>
+                  <td>Math</td>
+                  <td>Physics</td>
+                  <td>Chemistry</td>
+                  <td>Biology</td>
+                  <td>English</td>
+                </tr>
+                <tr>
+                  <td>10:00 AM</td>
+                  <td>Programming</td>
+                  <td>Data Structures</td>
+                  <td>Algorithms</td>
+                  <td>Operating Systems</td>
+                  <td>Web Development</td>
+                </tr>
+                <tr>
+                  <td>11:00 AM</td>
+                  <td>Break</td>
+                  <td>Break</td>
+                  <td>Break</td>
+                  <td>Break</td>
+                  <td>Break</td>
+                </tr>
+                <tr>
+                  <td>12:00 PM</td>
+                  <td>Database</td>
+                  <td>Networking</td>
+                  <td>Software Eng.</td>
+                  <td>Discrete Math</td>
+                  <td>Electronics</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+        <!-- Contact Section -->
+        <section id="contact" class="contact">
+          <h2>Contact</h2>
+          <p>
+            For more information, please email us at
+            <a href="mailto:info@csecsectionclass.com">info@csecsectionclass.com</a>.
+          </p>
+        </section>
+      </main>
     </div>
   </body>
 </html>
+
