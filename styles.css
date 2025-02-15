@@ -92,7 +92,8 @@ h2 {
   transition: transform 0.3s ease;
 }
 
-h1:hover, h2:hover {
+h1:hover,
+h2:hover {
   transform: scale(1.02);
 }
 
@@ -127,7 +128,7 @@ h1:hover, h2:hover {
 .timetable {
   margin-top: 40px;
   padding: 0 10px;
-  overflow-x: auto;
+  overflow-x: visible; /* Removed horizontal scroll */
 }
 
 .timetable .table-wrapper {
@@ -138,18 +139,21 @@ h1:hover, h2:hover {
   width: 100%;
   border-collapse: separate;
   border-spacing: 0 10px;
+  table-layout: fixed; /* Ensure columns share equal width */
 }
 
 .timetable th {
   background: #2c2c2c;
   color: #ffd700;
-  padding: 14px 10px;
+  padding: 20px 15px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
   border: none;
   border-top-left-radius: 4px;
   border-top-right-radius: 4px;
   transition: background 0.3s ease;
+  overflow-wrap: break-word; /* Wrap long text */
+  word-wrap: break-word;
 }
 
 .timetable th:hover {
@@ -162,6 +166,8 @@ h1:hover, h2:hover {
   text-align: center;
   border: 1px solid #5a5a5a;
   transition: background 0.3s ease, transform 0.3s ease;
+  overflow-wrap: break-word; /* Wrap long text */
+  word-wrap: break-word;
 }
 
 .timetable tr td:first-child {
@@ -249,6 +255,10 @@ footer {
   .timetable th,
   .timetable td {
     padding: 8px 6px;
-    font-size: 12px;
+    font-size: 10px;
+  }
+  /* Reduce border spacing on very small screens */
+  .timetable table {
+    border-spacing: 0 5px;
   }
 }
