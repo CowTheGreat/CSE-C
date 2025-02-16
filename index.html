@@ -9,7 +9,168 @@
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* General Styles */
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+
+      /* Navigation Bar */
+      .navbar {
+        background-color: #4CAF50;
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .navbar ul li {
+        margin: 0 10px;
+      }
+
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .navbar ul li a:hover {
+        background-color: #45a049;
+        color: #fff;
+      }
+
+      .navbar ul li a.active {
+        background-color: #388e3c;
+      }
+
+      /* Home Section */
+      #home {
+        text-align: center;
+        padding: 50px 0;
+      }
+
+      #home h1 {
+        font-size: 2.5rem;
+        color: #4CAF50;
+      }
+
+      /* Students Section */
+      .students {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+
+      .students h2 {
+        color: #4CAF50;
+      }
+
+      .students ul {
+        list-style: none;
+        padding: 0;
+      }
+
+      .students ul li {
+        padding: 10px;
+        border-bottom: 1px solid #ddd;
+      }
+
+      .students ul li:last-child {
+        border-bottom: none;
+      }
+
+      /* Timetable Section */
+      .timetable {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+
+      .timetable h2 {
+        color: #4CAF50;
+      }
+
+      .table-wrapper {
+        overflow-x: auto;
+      }
+
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+
+      th, td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+
+      /* Contact Section */
+      .contact {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+      }
+
+      .contact h2 {
+        color: #4CAF50;
+      }
+
+      .contact p.con {
+        font-size: 1.1rem;
+      }
+
+      .contact a {
+        color: #4CAF50;
+        text-decoration: none;
+        font-weight: 600;
+      }
+
+      .contact a:hover {
+        text-decoration: underline;
+      }
+    </style>
   </head>
   
 
@@ -19,7 +180,7 @@
       <header>
         <nav class="navbar">
           <ul>
-            <li><a href="#home">Home</a></li>
+            <li><a href="#home" class="active">Home</a></li>
             <li><a href="#students">Students</a></li>
             <li><a href="#timetable">Timetable</a></li>
             <li><a href="#contact">Contact</a></li>

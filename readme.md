@@ -1,33 +1,21 @@
-# CSE C Section Class Website
+Description
+Welcome to the CSE C Section Class Website! This is a simple, beginner-friendly HTML website created for our class. While it may not be the most advanced, it’s a great way to explore basic web development and have some fun with design.
 
-## Description
+Features
+Straightforward HTML & CSS structure
+Simple and easy-to-navigate layout
+Basic styling for a clean look
+A great way to learn and experiment with web design
+Installation
+Download the files.
+Open index.html in any browser.
+Explore and enjoy!
+Future Improvements
+Add more styling for a polished look
+Improve responsiveness for better viewing on all devices
+Include more interactive features
+Contributing
+Everyone is welcome to contribute! Feel free to add improvements, experiment with new styles, or make it more engaging.
 
-This is a **horribly designed** website for the **CSE C Section** class. It is made with **outdated HTML and bad CSS styling** just for the sake of having a webpage. Nothing is optimized, and responsiveness is **non-existent**.
-
-## Features
-
-- **Ugly Design**
-- **Poorly structured HTML & CSS**
-- **Terrible color choices (if any)**
-- **Inline styles mixed with external styles**
-- **No responsiveness because why bother?**
-
-## Installation
-
-1. Download the files.
-2. Open `index.html` in any browser.
-3. Be amazed (or horrified).
-
-## Future Improvements (Probably Not)
-
-- Make it **even worse**
-- Add **more unnecessary tables**
-- Introduce **random flashing colors**
-
-## Contributing
-
-**Don’t.** But if you must, make sure you add **even more bad practices** to keep the spirit of this project alive.
-
-## License
-
-No license, because this shouldn't exist.
+License
+This project is open for learning and fun—use it as a starting point for your web development journey!
