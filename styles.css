@@ -348,3 +348,120 @@ h2:hover {
     border-spacing: 0 5px;
   }
 }
+/* Basic reset and font */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+}
+
+/* Container */
+.container {
+  width: 100%;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Navbar */
+.navbar {
+  background-color: #333;
+  padding: 10px 0;
+}
+.navbar ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+.navbar li {
+  margin: 0 15px;
+}
+.navbar a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+}
+
+/* Header Section */
+header {
+  text-align: center;
+  margin-top: 20px;
+}
+header h1 {
+  font-size: 2.5rem;
+  color: #333;
+}
+
+/* Students Section */
+.students h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+.students ul {
+  list-style: none;
+  padding: 0;
+  font-size: 1.2rem;
+}
+
+/* Timetable Section */
+.timetable h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+.table-wrapper {
+  overflow-x: auto;
+  margin-top: 20px;
+}
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+th, td {
+  padding: 10px;
+  text-align: center;
+  border: 1px solid #ddd;
+}
+th {
+  background-color: #f0f0f0;
+}
+
+/* Contact Section */
+.contact h2 {
+  margin-top: 30px;
+  font-size: 2rem;
+  color: #333;
+}
+.contact p {
+  font-size: 1.1rem;
+}
+
+/* Footer */
+footer {
+  background-color: #333;
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+}
+footer ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  padding: 0;
+}
+footer ul li {
+  margin: 0 10px;
+}
+footer ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+footer ul li a:hover {
+  text-decoration: underline;
+}
