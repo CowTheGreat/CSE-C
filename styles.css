@@ -9,6 +9,11 @@ body {
   overflow-x: hidden;
 }
 
+/* Smooth Scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
 /* Container */
 .container {
   width: 80%;
@@ -21,7 +26,7 @@ body {
   animation: fadeIn 0.5s ease-in-out;
 }
 
-/* Fade In Animation for container */
+/* Fade In Animation */
 @keyframes fadeIn {
   from {
     opacity: 0;
@@ -128,61 +133,65 @@ h2:hover {
 .timetable {
   margin-top: 40px;
   padding: 0 10px;
-  overflow-x: visible; /* Removed horizontal scroll */
+  overflow-x: auto;
 }
 
 .timetable .table-wrapper {
   margin-top: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
 }
 
+/* Table Design */
 .timetable table {
   width: 100%;
-  border-collapse: separate;
-  border-spacing: 0 10px;
-  table-layout: fixed; /* Ensure columns share equal width */
+  border-collapse: collapse;
+  text-align: center;
+  background: #424242;
+  border-radius: 8px;
+  overflow: hidden;
 }
 
+/* Header Row */
 .timetable th {
   background: #2c2c2c;
   color: #ffd700;
-  padding: 20px 15px;
+  padding: 15px;
   text-transform: uppercase;
   letter-spacing: 0.5px;
-  border: none;
-  border-top-left-radius: 4px;
-  border-top-right-radius: 4px;
-  transition: background 0.3s ease;
-  overflow-wrap: break-word; /* Wrap long text */
-  word-wrap: break-word;
+  font-weight: bold;
+  border-bottom: 2px solid #ffd700;
 }
 
-.timetable th:hover {
+/* Table Rows */
+.timetable td {
+  background: #424242;
+  padding: 14px;
+  border-bottom: 1px solid #5a5a5a;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+/* Alternate Row Colors */
+.timetable tbody tr:nth-child(even) td {
   background: #3a3a3a;
 }
 
-.timetable td {
-  background: #424242;
-  padding: 14px 10px;
-  text-align: center;
-  border: 1px solid #5a5a5a;
-  transition: background 0.3s ease, transform 0.3s ease;
-  overflow-wrap: break-word; /* Wrap long text */
-  word-wrap: break-word;
+/* Hover Effects */
+.timetable tbody tr:hover td {
+  background: #555555;
+  transform: scale(1.02);
 }
 
+/* Rounded Borders */
 .timetable tr td:first-child {
-  border-top-left-radius: 4px;
-  border-bottom-left-radius: 4px;
+  border-top-left-radius: 8px;
+  border-bottom-left-radius: 8px;
 }
 
 .timetable tr td:last-child {
-  border-top-right-radius: 4px;
-  border-bottom-right-radius: 4px;
-}
-
-.timetable tr:hover td {
-  background: #4d4d4d;
-  transform: translateY(-2px);
+  border-top-right-radius: 8px;
+  border-bottom-right-radius: 8px;
 }
 
 /* Contact Section */
@@ -224,15 +233,18 @@ footer {
     width: 90%;
     padding: 20px;
   }
+
   h1,
   h2 {
     font-size: 20px;
   }
+
   .timetable th,
   .timetable td {
-    padding: 10px 8px;
+    padding: 12px 8px;
     font-size: 14px;
   }
+
   /* Stack the navigation vertically on tablets */
   .navbar ul {
     flex-direction: column;
@@ -245,18 +257,22 @@ footer {
     width: 95%;
     padding: 15px;
   }
+
   h1,
   h2 {
     font-size: 18px;
   }
+
   .students li {
     font-size: 14px;
   }
+
   .timetable th,
   .timetable td {
     padding: 8px 6px;
-    font-size: 10px;
+    font-size: 12px;
   }
+
   /* Reduce border spacing on very small screens */
   .timetable table {
     border-spacing: 0 5px;
