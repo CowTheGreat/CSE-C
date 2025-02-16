@@ -7,7 +7,7 @@
 }
 body {
   font-family: 'Poppins', sans-serif;
-  background-color:var(--bgcolor); /* Grey background */
+  background-color:var(--bgcolor); 
   color:var(--txtcolor); /* Light text for contrast */
   line-height: 1.6;
   margin: 0;
