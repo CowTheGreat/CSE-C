@@ -1,9 +1,9 @@
 /* Base Styles */
 :root {
-  --bgcolor: #640d5f;
-  --concolor: #d91656;
-  --txtcolor: #ffb200;
-  --bg2color: #eb5b00;
+  --bgcolor: rgb(36, 192, 249);
+  --concolor: hwb(195 64% 6%);
+  --txtcolor: hsl(158, 89%, 4%);
+  --bg2color: #00eb5e;
 }
 body {
   font-family: "Poppins", sans-serif;
@@ -181,6 +181,7 @@ h2:hover {
   background: #424242;
   border-radius: 8px;
   overflow: hidden;
+  color:#aacb18
 }
 
 /* Header Row */
