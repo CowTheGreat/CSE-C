@@ -1,9 +1,9 @@
 
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty & Subjects</title>
     <!-- Google Font: Poppins -->
     <link
@@ -11,147 +11,158 @@
       rel="stylesheet" href="styles.css"
     />
     <style>
-      /* General Styles */
-      body {
-        font-family: 'Poppins', sans-serif;
-        margin: 0;
-        padding: 0;
-        background-color: #f4f4f9;
-        color: #333;
-        display: flex;
-        flex-direction: column;
-        min-height: 100vh;
-      }
+        /* General Styles */
+        body {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+        }
 
-      .container {
-        max-width: 1200px;
-        margin: 0 auto;
-        padding: 20px;
-        flex: 1;
-      }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            padding: 20px;
+            flex: 1;
+        }
 
-      /* Navigation Bar */
-      .navbar {
-        background-color: #4CAF50;
-        padding: 10px 20px;
-        border-radius: 8px;
-        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-      }
+        /* Navigation Bar */
+        .navbar {
+            background-color: #2c3e50;
+            padding: 15px 20px;
+            border-radius: 8px;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            display: flex;
+            justify-content: center;
+        }
 
-      .navbar ul {
-        list-style: none;
-        margin: 0;
-        padding: 0;
-        display: flex;
-        justify-content: space-around;
-        align-items: center;
-      }
+        .navbar ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+        }
 
-      .navbar ul li {
-        margin: 0 10px;
-      }
+        .navbar ul li {
+            margin: 0 15px;
+        }
 
-      .navbar ul li a {
-        text-decoration: none;
-        color: white;
-        font-weight: 600;
-        padding: 10px 15px;
-        border-radius: 5px;
-        transition: background-color 0.3s ease, color 0.3s ease;
-      }
+        .navbar ul li a {
+            text-decoration: none;
+            color: white;
+            font-weight: 600;
+            padding: 10px 15px;
+            border-radius: 5px;
+            transition: background 0.3s ease;
+        }
 
-      .navbar ul li a:hover {
-        background-color: #45a049;
-        color: #fff;
-      }
+        .navbar ul li a:hover, .navbar ul li a.active {
+            background-color: #1a252f;
+        }
 
-      .navbar ul li a.active {
-        background-color: #388e3c;
-      }
+        /* Page Header */
+        h1 {
+            text-align: center;
+            color: #2c3e50;
+            margin-top: 30px;
+            font-size: 28px;
+        }
 
-      /* Faculty Page Specific Styles */
-      h1 {
-        text-align: center;
-        color: #333;
-        margin-top: 20px;
-      }
+        /* Table Styling */
+        table {
+            width: 100%;
+            margin: 30px auto;
+            border-collapse: collapse;
+            background: white;
+            border-radius: 8px;
+            overflow: hidden;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
 
-      table {
-        width: 80%;
-        margin: 20px auto;
-        border-collapse: collapse;
-        background-color: #fff;
-        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-      }
+        th, td {
+            padding: 14px;
+            text-align: left;
+            border-bottom: 1px solid #ddd;
+        }
 
-      th, td {
-        padding: 12px;
-        text-align: left;
-        border-bottom: 1px solid #ddd;
-      }
+        th {
+            background-color: #2c3e50;
+            color: white;
+            font-size: 16px;
+        }
 
-      th {
-        background-color: #4CAF50;
-        color: white;
-      }
+        tr:nth-child(even) {
+            background-color: #f9f9f9;
+        }
 
-      tr:hover {
-        background-color: #f5f5f5;
-      }
+        tr:hover {
+            background-color: #f1f1f1;
+        }
 
-      .faculty-name {
-        font-weight: bold;
-        color: #2c3e50;
-      }
+        .faculty-name {
+            font-weight: bold;
+            color: #34495e;
+        }
 
-      .back-link {
-        text-align: center;
-        margin-top: 20px;
-      }
+        /* Back Link */
+        .back-link {
+            text-align: center;
+            margin-top: 20px;
+        }
 
-      .back-link a {
-        color: red;
-        font-size: 20px;
-        text-decoration: none;
-      }
+        .back-link a {
+            color: #e74c3c;
+            font-size: 18px;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-      .back-link a:hover {
-        text-decoration: underline;
-      }
+        .back-link a:hover {
+            text-decoration: underline;
+        }
 
-      /* Footer Styles */
-      footer {
-        background-color: #333;
-        color: white;
-        text-align: center;
-        padding: 15px 0;
-        margin-top: auto;
-      }
+        /* Footer */
+        footer {
+            background-color: #2c3e50;
+            color: white;
+            text-align: center;
+            padding: 15px 0;
+            margin-top: auto;
+            font-size: 14px;
+        }
 
-      footer p {
-        margin: 0;
-        font-size: 14px;
-      }
+        footer a {
+            color: #4CAF50;
+            text-decoration: none;
+            font-weight: 600;
+        }
 
-      footer a {
-        color: #4CAF50;
-        text-decoration: none;
-        font-weight: 600;
-      }
+        footer a:hover {
+            text-decoration: underline;
+        }
 
-      footer a:hover {
-        text-decoration: underline;
-      }
+        /* Responsive Styles */
+        @media (max-width: 768px) {
+            table {
+                width: 100%;
+            }
+            
+            .navbar ul {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .navbar ul li {
+                margin-bottom: 10px;
+            }
+        }
     </style>
-  </head>
-  <!--<style>
-    /* Table styling */
-    table {
-      width: 80%;
-      margin: 20px auto;
-      border-collapse: collapse; /* Ensures borders are joined */
-    }
-
+</head>
+<body>
     th, td {
       padding: 12px;
       text-align: left;
@@ -304,6 +315,7 @@
             <li><a href="index.html#timetable">Timetable</a></li>
             <li><a href="index.html#contact">Contact</a></li>
             <li><a href="faculty.html" class="active">Faculties</a></li>
+
             <li><a href="fat.html">FAT</a></li>
           </ul>
         </nav>
@@ -334,14 +346,41 @@
         </tr>
       </table>
 
-      <div class="back-link">
-        <a href="index.html">Go Back to Home</a>
-      </div>
+    <!-- Faculty Content -->
+    <div class="container">
+        <h1>CSE C Section Faculty & Subjects</h1>
+        <table>
+            <tr>
+                <th>Faculty Name</th>
+                <th>Designation</th>
+                <th>Subject</th>
+            </tr>
+            <tr>
+                <td class="faculty-name">Dr. Anand</td>
+                <td>Professor</td>
+                <td>Machine Learning</td>
+            </tr>
+            <tr>
+                <td class="faculty-name">Mr. Kumaran</td>
+                <td>Assistant Professor</td>
+                <td>Data Structures</td>
+            </tr>
+            <tr>
+                <td class="faculty-name">Ms. Priya</td>
+                <td>Lecturer</td>
+                <td>Operating Systems</td>
+            </tr>
+        </table>
+
+        <div class="back-link">
+            <a href="index.html">Go Back to Home</a>
+        </div>
     </div>
 
     <!-- Footer -->
     <footer>
-      <p>&copy; 2023 CSE C Section Class. All rights reserved. | <a href="index.html">Home</a></p>
+        <p>&copy; 2025 CSE C Section. All rights reserved. | <a href="index.html">Home</a></p>
     </footer>
+
   </body>
 </html>
