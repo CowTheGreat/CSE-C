@@ -480,7 +480,8 @@ th {
 }
 
 /* Contact Section */
-.contact h2 {
+.contact h2
+ {
   margin-top: 30px;
   font-size: 2rem;
   color: #333;
