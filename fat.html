@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+      /* General Styles */
+      body {
+        font-family: 'Poppins', sans-serif;
+        margin: 0;
+        padding: 0;
+        background-color: #f4f4f9;
+        color: #333;
+      }
+      .container {
+        max-width: 1200px;
+        margin: 0 auto;
+        padding: 20px;
+      }
+      /* Navigation Bar */
+      .navbar {
+        background-color: #4CAF50;
+        padding: 10px 20px;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      .navbar ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+      }
+      .navbar ul li {
+        margin: 0 10px;
+      }
+      .navbar ul li a {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+      .navbar ul li a:hover {
+        background-color: #45a049;
+        color: #fff;
+      }
+      /* Timetable Section */
+      .timetable {
+        padding: 20px;
+        background-color: #fff;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+      }
+      .timetable h2 {
+        color: #4CAF50;
+        text-align: center;
+        width: 100%;
+      }
+      .table-wrapper {
+        flex: 1;
+        margin: 10px;
+      }
+      table {
+        width: 100%;
+        border-collapse: collapse;
+        margin-top: 20px;
+      }
+      th, td {
+        padding: 12px;
+        text-align: center;
+        border: 1px solid #ddd;
+      }
+      th {
+        background-color: #4CAF50;
+        color: white;
+      }
+      tr:nth-child(even) {
+        background-color: #f9f9f9;
+      }
+      tr:hover {
+        background-color: #f1f1f1;
+      }
+      /* Additional styles for subjects */
+      .subjects {
+        text-align: left;
+      }
+    </style>
+</head>
+
+<!---FAT Timetable added newly  -->
+<body>
+    <div class="container">
+      <!-- Navigation Bar -->
+      <header>
+        <nav class="navbar">
+          <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="exam-timetables.html" class="active">Exam Timetables</a></li>
+            <li><a href="contact.html">Contact</a></li>
+            <li><a href="faculty.html">Faculties</a></li>
+          </ul>
+        </nav>
+      </header>
+      <main>
+        <section id="exam-timetables" class="timetable">
+          <h2>FAT Exam Timetables</h2>
+          
+          <!-- Exam 1 -->
+          <div class="table-wrapper">
+            <h3>FAT 1 Timetable</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>27-2-2025</td>
+                  <td>Probability and Queuing 
+                    Theory</td>
+                </tr>
+                <tr>
+                  <td>27-2-2025</td>
+                  <td>Environmental Sciences 
+                    and Sustainability</td>
+                </tr>
+                <tr>
+                  <td>1-3-2025</td>
+                  <td>Operating Systems</td>
+                </tr>
+                <tr>
+                  <td>1-3-2025</td>
+                  <td>Machine Learning 
+                    Techniques</td>
+                </tr>
+                <tr>
+                  <td>3-3-2025</td>
+                  <td>Java Programming: Theory 
+                    and Practices</td>
+                </tr>
+                <tr>
+                  <td>3-3-2025</td>
+                  <td>Design and Analysis of 
+                    Algorithms</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Exam 2 -->
+          <div class="table-wrapper">
+            <h3>FAT 2 Timetable</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>5-4-2025</td>
+                  <td>Probability and Queuing 
+                    Theory</td>
+                </tr>
+                <tr>
+                  <td>5-4-2025</td>
+                  <td>Environmental Sciences 
+                    and Sustainability</td>
+                </tr>
+                <tr>
+                  <td>7-4-2025</td>
+                  <td>Operating Systems</td>
+                </tr>
+                <tr>
+                  <td>7-4-2025</td>
+                  <td>Machine Learning 
+                    Techniques</td>
+                </tr>
+                <tr>
+                  <td>9-4-2025</td>
+                  <td>Java Programming: Theory 
+                    and Practices</td>
+                </tr>
+                <tr>
+                  <td>9-4-2025</td>
+                  <td>Design and Analysis of 
+                    Algorithms</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <!-- Exam 3 -->
+          <div class="table-wrapper">
+            <h3>FAT 3 Timetable</h3>
+            <table>
+              <thead>
+                <tr>
+                  <th>Date</th>
+                  <th>Subject</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td>17-5-2025</td>
+                  <td>Probability and Queuing 
+                    Theory</td>
+                </tr>
+                <tr>
+                  <td>17-5-2025</td>
+                  <td>Environmental Sciences 
+                    and Sustainability</td>
+                </tr>
+                <tr>
+                  <td>19-5-2025</td>
+                  <td>Operating Systems</td>
+                </tr>
+                <tr>
+                  <td>19-5-2025</td>
+                  <td>Machine Learning 
+                    Techniques</td>
+                </tr>
+                
+                <tr>
+                  <td>21-5-2025</td>
+                  <td>Design and Analysis of 
+                    Algorithms</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </section>
+      </main>
+    </div>
+    <footer>
+      <p>&copy; 2025 CSE-C Section Class. All rights reserved.</p>
+    </footer>
+</body>
+</html> 
