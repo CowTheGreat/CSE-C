@@ -1,128 +1,63 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>FAT TIMETABLE</title>
-        <!-- Google Font: Poppins -->
-        <link
-            href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
-            rel="stylesheet"
-        />
-            <style>
-                body 
-                {
-                    font-family: 'Poppins', sans-serif;
-                    margin: 0;
-                    padding: 0;
-                    background-color: #f4f4f9;
-                    color: #333;
-                    display: flex;
-                    justify-content: center;
-                    align-items: center;
-                    flex-direction: column;
-                    min-height: 100vh;
-                    background-image: url("background.jpg");
-                    background-repeat:no-repeat;
-                    background-size: cover;
-                    background-position: center;
-                }
-
-                .heading
-                {
-                    text-align: center;
-                    background-color:#DA70D6;
-                    color: white;
-                    font-weight: bold;
-                    font-size:30px;
-                    padding: 10px;
-                    display: inline-block;
-                    border-radius:20px; 
-                }
-
-                .container
-                {
-                    text-align: center; /* Centers the text */
-                }
-                table 
-                {
-                    width: 60%;
-                    border-collapse: collapse;
-                    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
-                }
-
-                th, td 
-                {
-                    border: 1px solid white;
-                    padding: 10px;
-                    text-align: left;
-                }
-
-                th 
-                {
-                        
-                    text-align: center;
-                }
-
-                .tablecontent
-                {
-                    font-size:25px;
-                    color:white;
-                    font-weight: bold;
-                    margin-left:10px;
-                    width:1000px;
-                }
-                
-            </style>
-    </head>
-    <body>
-        <div class="container"> 
-            <h1 class="heading"> FORMATIVE ASSESSMENT TEST 3 TIMETABLE  </h1>
-        </div>
-        <div>
-            <table class="tablecontent">
-                <tr>
-                    <th><span>DATE</span></th>
-                    <th><span>FN/AN - TIME</span></th>
-                    <th><span>SUBJECT</span></th>
-                </tr>
-                 <tr>
-                    <td><span>17.05.2025</span></td>
-                    <td><span>FN - 9.30 am to 11 am</span></td>
-                    <td><span>Probability and Queuing Theory</span></td>
-                </tr>
-                <tr>
-                    <td><span>17.05.2025</span></td>
-                    <td><span>AN - 1.15 pm to 2.45 pm</span></td>
-                    <td><span>Environment Science and Sustainability</span></td>
-                </tr>
-                <tr>
-                    <td><span>19.05.2025</span></td>
-                    <td><span>FN - 9.30 am to 11 am</span></td>
-                    <td><span>Operating System</span></td>
-                </tr>
-                <tr>
-                    <td><span>19.05.2025</span></td>
-                    <td><span>AN - 1.15 pm to 2.45 pm</span></td>
-                    <td><span>JAVA</span></td>
-                </tr>
-                <tr>
-                    <td><span>21.05.2025</span></td>
-                    <td><span>FN - 9.30 am to 11 am</span></td>
-                    <td><span>Design and Analysis of Algorithm</span></td>
-                </tr>
-                <tr>
-                    <td><span>21.05.2025</span></td>
-                    <td><span>AN - 1.15 pm to 2.45 pm</span></td>
-                    <td><span>Machine Learning</span></td>
-                </tr>
-                <tr>
-                    <td><span>22.05.2025</span></td>
-                    <td><span>FN - 9.30 am to 11 am</span></td>
-                    <td><span>Power BI</span></td>
-                </tr>
-            </table>
-
-        </div>
-    </body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAT TIMETABLE</title>
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h1 class="heading">FORMATIVE ASSESSMENT TEST 3 TIMETABLE</h1>
+      <div>
+        <table class="tablecontent">
+          <tr>
+            <th><span>DATE</span></th>
+            <th><span>FN/AN - TIME</span></th>
+            <th><span>SUBJECT</span></th>
+          </tr>
+          <tr>
+            <td><span>17.05.2025</span></td>
+            <td><span>FN - 9.30 am to 11 am</span></td>
+            <td><span>Probability and Queuing Theory</span></td>
+          </tr>
+          <tr>
+            <td><span>17.05.2025</span></td>
+            <td><span>AN - 1.15 pm to 2.45 pm</span></td>
+            <td><span>Environment Science and Sustainability</span></td>
+          </tr>
+          <tr>
+            <td><span>19.05.2025</span></td>
+            <td><span>FN - 9.30 am to 11 am</span></td>
+            <td><span>Operating System</span></td>
+          </tr>
+          <tr>
+            <td><span>19.05.2025</span></td>
+            <td><span>AN - 1.15 pm to 2.45 pm</span></td>
+            <td><span>JAVA</span></td>
+          </tr>
+          <tr>
+            <td><span>21.05.2025</span></td>
+            <td><span>FN - 9.30 am to 11 am</span></td>
+            <td><span>Design and Analysis of Algorithm</span></td>
+          </tr>
+          <tr>
+            <td><span>21.05.2025</span></td>
+            <td><span>AN - 1.15 pm to 2.45 pm</span></td>
+            <td><span>Machine Learning</span></td>
+          </tr>
+          <tr>
+            <td><span>22.05.2025</span></td>
+            <td><span>FN - 9.30 am to 11 am</span></td>
+            <td><span>Power BI</span></td>
+          </tr>
+        </table>
+      </div>
+    </div>
+  </body>
 </html>

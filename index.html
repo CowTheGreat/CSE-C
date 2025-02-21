@@ -3,12 +3,13 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>CSE C Section Class</title>
+    <title>Home - CSE C Section Class</title>
     <!-- Google Font: Poppins -->
     <link
       href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="styles.css" />
     <style>
       /* General Styles */
       body {
@@ -171,6 +172,31 @@
         text-decoration: underline;
       }
 
+      /* Syllabus Section */
+      .syllabus {
+        padding: 20px;
+        background-color: #D91656;
+        border-radius: 8px;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        margin: 20px 0;
+        color: white;
+      }
+
+      .syllabus h3 {
+        color: white;
+      }
+
+      .syllabus a {
+        color: white;
+        text-decoration: none;
+        font-weight: 600;
+        display: block;
+        margin: 5px 0;
+      }
+
+      .syllabus a:hover {
+        text-decoration: underline;
+      }
 
     </style>
   </head>
@@ -183,11 +209,10 @@
         <nav class="navbar">
           <ul>
             <li><a href="index.html" class="active">Home</a></li>
-            <li><a href="#students">Students</a></li>
-            <li><a href="#timetable">Timetable</a></li>
-            <li><a href="#contact">Contact</a></li>
+            <li><a href="students.html">Students</a></li>
+            <li><a href="timetable.html">Timetable</a></li>
+            <li><a href="contact.html">Contact</a></li>
             <li><a href="faculty.html">Faculties</a></li>
-            <li><a href="timetable.html">Fat TimeTable</a></li>
             <li><a href="fat.html">FAT</a></li>
           </ul>
         </nav>
@@ -196,6 +221,23 @@
         </section>
       </header>
       <main>
+        <section class="intro">
+          <h1>Welcome to CSE C Section Class Website</h1>
+          <p>
+            This is a simple, beginner-friendly HTML website created for our
+            class. While it may not be the most advanced, it’s a great way to
+            explore basic web development and have some fun with design.
+          </p>
+        </section>
+        <section class="features">
+          <h2>Features</h2>
+          <ul>
+            <li>Straightforward HTML & CSS structure</li>
+            <li>Simple and easy-to-navigate layout</li>
+            <li>Basic styling for a clean look</li>
+            <li>A great way to learn and experiment with web design</li>
+          </ul>
+        </section>
         <section id="announcements" class="announcements">
           <h2>Important Announcements</h2>
           <ul>
@@ -280,37 +322,15 @@
           </div>
         </section>
 
-        <!--Fat timetable-->
-        <section id="fat timetable" class="fat timetable">
-          <h2>Fat Timetable</h2>
-          <div class="table-wrapper">
-            <table>
-              <thead>
-                <tr>
-                  <th class="time">DAY</th>
-                  <th class="time">FN(9.30am to 11.00am)</th>
-                  <th class="time">AN(1.15pm to 2.45pm)</th>
-                </tr>
-              </thead>
-              <tbody>
-                <tr>
-                  <td>Thursday(27-02-2025)</td>
-                  <td>Maths</td>
-                  <td>EVS</td>
-                </tr>
-                <tr>
-                  <td>Saturday(01-03-2025)</td>
-                  <td>Java</td>
-                  <td>Design and Analysis of Algorithm</td>
-                </tr>
-                <tr>
-                  <td>Monday(03-03-2025)</td>
-                  <td>Operating System</td>
-                  <td>Machine learning</td>
-                </tr>
-              </tbody>
-            </table>
-          </div>
+        <!-- Syllabus Section -->
+        <section class="syllabus">
+          <h3>Syllabus</h3>
+          <a href="https://www.svce.ac.in/wp-content/uploads/2024/11/R22-BE-CSE-Sem-I-VIII-21-11-2024.pdf">Operating System</a><br>
+          <a href="https://www.svce.ac.in/wp-content/uploads/2024/11/R22-BE-CSE-Sem-I-VIII-21-11-2024.pdf">Machine Learning</a><br>
+          <a href="https://www.svce.ac.in/wp-content/uploads/2024/11/R22-BE-CSE-Sem-I-VIII-21-11-2024.pdf">Java</a><br>
+          <a href="https://www.svce.ac.in/wp-content/uploads/2024/11/R22-BE-CSE-Sem-I-VIII-21-11-2024.pdf">DAA</a><br>
+          <a href="https://www.svce.ac.in/wp-content/uploads/2024/11/R22-BE-CSE-Sem-I-VIII-21-11-2024.pdf">Maths</a><br>
+          <a href="https://www.svce.ac.in/wp-content/uploads/2024/11/R22-BE-CSE-Sem-I-VIII-21-11-2024.pdf">EVS</a><br>
         </section>
 
         <!--Portion-->
