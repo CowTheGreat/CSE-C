@@ -1,10 +1,15 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Faculty & Subjects</title>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet" href="styles.css"
+    />
     <style>
         /* General Styles */
         body {
@@ -158,17 +163,188 @@
     </style>
 </head>
 <body>
+    th, td {
+      padding: 12px;
+      text-align: left;
+      border: 1px solid #ddd;
+    }
 
-    <!-- Navigation Bar -->
-    <nav class="navbar">
-        <ul>
+    th {
+      background-color: #f2f2f2;
+    }
+
+    /* Link styling */
+    a {
+      color: red;
+      font-size: 20px;
+      text-decoration: none;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Heading styling */
+    h1 {
+      text-align: center;
+      margin-bottom: 20px;
+    }
+  </style>-->
+   <style>
+    /* General body styling */
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #b3def7;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+
+    /* Center heading and style */
+    h1 {
+      text-align: center;
+      color: #333;
+      margin: 40px 0;
+      font-size: 36px;
+      font-weight: bold;
+    }
+
+    /* Table Styling */
+    table {
+      width: 80%;
+      margin: 20px auto;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      background-color: #ffffff;
+    }
+
+    th, td {
+      padding: 12px 20px;
+      text-align: left;
+      border-bottom: 1px solid #e0e0e0;
+    }
+
+    th {
+      background-color: #2d3e50;
+      color: #fff;
+      font-size: 18px;
+      font-weight: bold;
+    }
+
+    /* Alternate row colors for better readability */
+    tr:nth-child(even) {
+      background-color: #f9f9f9;
+    }
+
+    tr:hover {
+      background-color: #f1f1f1;
+    }
+
+    /* Link Styling */
+    a {
+      color: #007bff;
+      font-size: 18px;
+      text-decoration: none;
+      font-weight: 600;
+    }
+
+    a:hover {
+      text-decoration: underline;
+    }
+
+    /* Add some padding to the bottom */
+    p {
+      text-align: center;
+      margin-top: 20px;
+    }
+  </style>
+  <body>
+    <div class="container">
+      <!-- Navigation Bar -->
+      <header>
+          <nav class="navbar">
+              <ul>
+                  <li><a href="index.html">Home</a></li>
+                  <li><a href="students.html">Students</a></li>
+                  <li><a href="timetable.html">Timetable</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  <li><a href="faculty.html" class="active">Faculties</a></li>
+              </ul>
+          </nav>
+      </header>
+    </div>
+
+    <h1 style="text-align: center">CSE C Section Faculty & Subjects</h1>
+    <table>
+      <tr>
+        <th>Faculty Name</th>
+        <th>Designation</th>
+        <th>Subject</th>
+      </tr>
+      <tr>
+        <td>Dr.John</td>
+        <td>Professor </td>
+        <td>Machine Learning</td>
+      </tr>
+      <tr>
+        <td>Mr.Robin</td>
+        <td>Assistant Professor</td>
+        <td>Maths</td>
+      </tr>
+      <tr>
+        <td>Ms.Angel</td>
+        <td>Lecturer</td>
+        <td>Operating Systems</td>
+      </tr>
+    </table>
+
+    <p style="text-align: center">
+      <a href="index.html" style="color: red; font-size: 20px"
+        >Go Back to Home</a
+      >
+    </p>
+
+    <div class="container">
+      <!-- Navigation Bar -->
+      <header>
+        <nav class="navbar">
+          <ul>
             <li><a href="index.html">Home</a></li>
             <li><a href="index.html#students">Students</a></li>
             <li><a href="index.html#timetable">Timetable</a></li>
             <li><a href="index.html#contact">Contact</a></li>
             <li><a href="faculty.html" class="active">Faculties</a></li>
-        </ul>
-    </nav>
+
+            <li><a href="fat.html">FAT</a></li>
+          </ul>
+        </nav>
+      </header>
+
+      <!-- Faculty Content -->
+      <h1>CSE C Section Faculty & Subjects</h1>
+      <table>
+        <tr>
+          <th>Faculty Name</th>
+          <th>Designation</th>
+          <th>Subject</th>
+        </tr>
+        <tr>
+          <td class="faculty-name">Dr.Anand</td>
+          <td>Professor</td>
+          <td>Machine Learning</td>
+        </tr>
+        <tr>
+          <td class="faculty-name">Mr.Kumaran</td>
+          <td>Assistant Professor</td>
+          <td>Maths</td>
+        </tr>
+        <tr>
+          <td class="faculty-name">Ms.Priya</td>
+          <td>Lecturer</td>
+          <td>Operating Systems</td>
+        </tr>
+      </table>
 
     <!-- Faculty Content -->
     <div class="container">
@@ -206,5 +382,5 @@
         <p>&copy; 2025 CSE C Section. All rights reserved. | <a href="index.html">Home</a></p>
     </footer>
 
-</body>
+  </body>
 </html>
