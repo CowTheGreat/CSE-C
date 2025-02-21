@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FAT TIMETABLE</title>
+    <!-- Google Font: Poppins -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap"
+      rel="stylesheet"
+    />
+    <style>
+        body 
+        {
+            font-family: 'Poppins', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+            color: #333;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            min-height: 100vh;
+            background-image: url("background.jpg");
+            background-repeat:no-repeat;
+            background-size: cover;
+            background-position: center;
+       }
+
+        .container
+        {
+            text-align: center; /* Centers the text */
+        }
+
+        .heading
+        {
+            text-align: center;
+            background-color:#DA70D6;
+            color: white;
+            font-weight: bold;
+            font-size:30px;
+            padding: 10px;
+            display: inline-block;
+            border-radius:20px;
+        }
+
+        .navbar 
+        {
+            margin-top:10px;
+            padding: 10px 20px;
+            border-radius: 8px;
+            font-size:30px;
+            font-weight: bold;
+        }
+
+        .navbar ul 
+        {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+
+      .navbar ul li 
+      {
+        margin: 0 10px;
+      }
+
+      .navbar ul li a 
+      {
+        text-decoration: none;
+        color: white;
+        font-weight: 600;
+        padding: 10px 15px;
+        border-radius: 5px;
+        transition: background-color 0.3s ease, color 0.3s ease;
+      }
+
+      .navbar ul li a:hover 
+      {
+        background-color: #DDA0DD;
+        color: #fff;
+      }
+
+      .subjects
+      {
+            text-align: center;
+            color: white;
+            font-weight: bold;
+            font-size:25px;
+            padding: 10px;
+            display: inline-block;
+            border-radius:20px;
+            cursor:pointer;
+      }
+
+      table {
+            width: 60%;
+            border-collapse: collapse;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+        }
+
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+        }
+
+        th {
+            
+            text-align: center;
+        }
+
+        .tablecontent
+        {
+            font-size:25px;
+            color:white;
+            font-weight: bold;
+            margin-left:10px;
+            width:1000px;
+        }
+
+        .tablecontent a 
+        {
+            color: #FFD700; 
+            font-weight: bold;
+            text-decoration: none;
+        }
+
+        .tablecontent a:hover 
+        {
+            color: #FF4500; 
+            text-decoration: underline;
+        }
+
+    </style>
+    </head>
+        <body>
+            <div class="container"> 
+                <h1 class="heading">CSE C FORMATIVE ASSESSMENT TEST TIMETABLE </h1>
+                <nav class="navbar">
+                    <ul>
+                        <li><a href="fat1.html" target="_blank" class="active">FAT1</a></li>
+                        <li><a href="fat2.html" target="_blank">FAT2</a></li>
+                        <li><a href="fat3.html" target="_blank">FAT3</a></li>
+                    </ul>
+                </nav>
+                <div class="subjects">
+                    <h1>SUBJECTS</h1>
+                </div>
+                    <div>
+                        <table class="tablecontent">
+                            <tr>
+                                <th><span>SUB CODE</span></th>
+                                <th><span>SUBJECT NAME</span></th>
+                                <th><span>LINK</span></th>
+                            </tr>
+                             <tr>
+                                <td><span>CS22401</span></td>
+                                <td><span>Operating Systems</span></td>
+                                <td><span><a href="syllabus/os syllabus.pdf" target="_blank">CLICK HERE</a></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>CS22402</span></td>
+                                <td><span>Machine Learning Techniques</span></td>
+                                <td><span><a href="syllabus/ML_syllabus.pdf" target="_blank">CLICK HERE</a></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>CS22403</span></td>
+                                <td><span>Design and Analysis of Algorithms</span></td>
+                                <td><span><a href="syllabus/DAA_syllabus.pdf " target="_blank">CLICK HERE</a></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>CS22409</span></td>
+                                <td><span>Java Programming: Theory and Practices</span></td>
+                                <td><span><a href="syllabus/Java_syllabus.pdf" target="_blank">CLICK HERE</a></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>MA22454</span></td>
+                                <td><span>Probability and Queuing Theory</span></td>
+                                <td><span><a href="syllabus/pqt syllabus.pdf" target="_blank">CLICK HERE</a></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>GE22451</span></td>
+                                <td><span>Environmental Sciences and Sustainability</span></td>
+                                <td><span><a href="syllabus/EVS_syllabus.pdf" target="_blank">CLICK HERE</a></span></td>
+                            </tr>
+                            <tr>
+                                <td><span>VD22003</span></td>
+                                <td><span>Power BI</span></td>
+                            </tr>
+                        </table>
+
+                    </div>
+        </body>
+    </head>
+</html>
